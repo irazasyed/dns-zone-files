@@ -1,0 +1,9 @@
+;; MX Records
+@ 300 IN  MX  1   aspmx.l.google.com.
+@ 300 IN  MX  5   alt1.aspmx.l.google.com.
+@ 300 IN  MX  5   alt2.aspmx.l.google.com.
+@ 300 IN  MX  10  aspmx2.googlemail.com.
+@ 300 IN  MX  10  aspmx3.googlemail.com.
+
+;; TXT Records
+@ 300 IN  TXT v=spf1 include:_spf.google.com ~all
