@@ -1,3 +1,5 @@
+;; Google Apps Records.
+
 ;; MX Records
 @ 300 IN  MX  1   aspmx.l.google.com.
 @ 300 IN  MX  5   alt1.aspmx.l.google.com.

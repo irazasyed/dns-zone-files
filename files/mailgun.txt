@@ -1,4 +1,4 @@
-;; Mailgun Records
+;; Mailgun Records.
 
 ;; MX Records
 @ 300 IN MX 10 mxa.mailgun.org.

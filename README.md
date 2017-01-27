@@ -7,7 +7,7 @@
 - [Google-Apps](files/google-apps.txt): MX Records & TXT Record to config Google Apps account (Old).
 - [GSuite](files/gsuite.txt): MX Records & TXT Record to config [G Suite](https://gsuite.google.com/) account (New).
 - [Mailgun](files/mailgun.txt): MX Records & TXT Record to config [Mailgun](http://www.mailgun.com/) service.
-- [SparkPost](files/sparkpost): TXT Records to config [SparkPost](https://sparkpost.com).
+- [SparkPost](files/sparkpost.txt): TXT Records to config [SparkPost](https://sparkpost.com).
 
 ## Usage
 
