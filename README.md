@@ -5,7 +5,8 @@
 ## Available Zone Files
 
 - [Google-Apps](google-apps.txt): MX Records & TXT Record to config Google Apps account (Old).
-- [GSuite](gsuite.txt): MX Records & TXT Record to config G Suite account (New).
+- [GSuite](gsuite.txt): MX Records & TXT Record to config [G Suite](https://gsuite.google.com/) account (New).
+- [Mailgun](mailgun.txt): MX Records & TXT Record to config [Mailgun](http://www.mailgun.com/) service.
 
 ## Usage
 

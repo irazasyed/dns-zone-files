@@ -1,0 +1,8 @@
+;; Mailgun Records
+
+;; MX Records
+@ 300 IN MX 10 mxa.mailgun.org.
+@ 300 IN MX 10 mxb.mailgun.org.
+
+;; TXT Records
+@ 300 IN TXT "v=spf1 include:mailgun.org ~all"
