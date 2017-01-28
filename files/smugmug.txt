@@ -1,0 +1,12 @@
+;; SmugMug
+;; https://www.smugmug.com/
+;;
+;; Docs:
+;; http://help.smugmug.com/customer/portal/articles/93340
+;;
+;; Adds the following records:
+;; - CNAME Records
+
+;; === CNAME Records ===
+@ 300 IN CNAME domains.smugmug.com.
+www 300 IN CNAME domains.smugmug.com.

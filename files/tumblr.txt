@@ -1,0 +1,15 @@
+;; Tumblr
+;; https://www.tumblr.com/
+;;
+;; Docs:
+;; https://www.tumblr.com/docs/en/blog_management#customdomain
+;;
+;; Adds the following records:
+;; - A Record
+;; - CNAME Record
+
+;; === A Record ===
+@ 300 IN A 66.6.44.4
+
+;; === CNAME Record ===
+www 300 IN CNAME domains.tumblr.com.

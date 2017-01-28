@@ -1,0 +1,13 @@
+;; ClickFunnels
+;; https://www.clickfunnels.com/
+;;
+;; Docs:
+;; http://docs.clickfunnels.com/custom-domains/how-to-set-up-add-or-integrate-a-custom-domain-with-your-clickfunnels-account-funnels-and-pages
+;; https://docs.clickfunnels.com/custom-domains/automatic-custom-domain-and-subdomain-setup
+;;
+;; Adds the following records:
+;; - CNAME Records
+
+;; === CNAME Records ===
+@ 300 IN CNAME target.clickfunnels.com.
+www 300 IN CNAME target.clickfunnels.com.

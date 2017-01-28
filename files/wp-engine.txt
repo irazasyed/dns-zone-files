@@ -1,0 +1,13 @@
+;; WP Engine
+;; https://wpengine.com/
+;;
+;; Docs:
+;; https://wpengine.com/support/wordpress-best-practice-configuring-dns-for-wp-engine/
+;;
+;; Adds the following records:
+;; - CNAME Records
+
+;; === CNAME Records ===
+;; - YOU MUST CHANGE "yourinstall" WITH APPROPRIATE VALUE FROM WPEngine.
+@ 300 IN CNAME yourinstall.wpengine.com.
+www 300 IN CNAME yourinstall.wpengine.com.

@@ -1,0 +1,13 @@
+;; AWS ELB
+;; https://aws.amazon.com/elasticloadbalancing/
+;;
+;; Docs:
+;; http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/using-domain-names-with-elb.html
+;;
+;; Adds the following records:
+;; - CNAME Records
+
+;; === CNAME Records ===
+;; - YOU MUST CHANGE THE VALUE WITH YOUR LOADBALANCER ID AND REGION.
+@ 300 IN CNAME my-loadbalancer-1234567890.us-west-2.elb.amazonaws.com.
+www 300 IN CNAME my-loadbalancer-1234567890.us-west-2.elb.amazonaws.com.

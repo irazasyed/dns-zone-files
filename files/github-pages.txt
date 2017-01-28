@@ -1,0 +1,16 @@
+;; Github Pages
+;; https://pages.github.com/
+;;
+;; Docs:
+;; https://help.github.com/articles/using-a-custom-domain-with-github-pages/
+;;
+;; Adds the following records:
+;; - A Records
+;; - CNAME Record
+
+;; === A Records ===
+@ 300 IN A 192.30.252.153
+@ 300 IN A 192.30.252.154
+
+;; === CNAME Record ===
+www 300 IN CNAME @

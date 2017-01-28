@@ -1,9 +1,12 @@
-;; G Suite Records.
+;; G Suite
 ;; https://gsuite.google.com/
+;;
+;; Docs:
+;; https://support.google.com/a/answer/174125
 ;;
 ;; Adds the following records:
 ;; - MX Records: For inbound emails
-;; - TXT Records: SPF & DKIM
+;; - TXT Records: Domain Verification, SPF & DKIM
 
 ;; === MX Records ===
 @ 300 IN  MX  1   aspmx.l.google.com.
@@ -13,6 +16,10 @@
 @ 300 IN  MX  10  alt4.aspmx.l.google.com.
 
 ;; === TXT Records ===
+;; Domain Verification
+;; - YOU MUST UPDATE THIS
+@ 300 IN TXT "google-site-verification=YOUR VERIFICATION STRING"
+
 ;; SPF
 @ 300 IN TXT "v=spf1 include:_spf.google.com ~all"
 

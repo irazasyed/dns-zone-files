@@ -1,0 +1,43 @@
+;; Zoho Mail
+;; https://www.zoho.com/mail/
+;;
+;; Docs:
+;; https://www.zoho.com/mail/help/adminconsole/email-hosting-setup.html
+;;
+;; Adds the following records:
+;; - CNAME Record: Custom Login URL for Zoho Mail (mail.yourdomain.com)
+;; - MX Records: For inbound emails
+;; - TXT Records: Domain Verification, SPF, DKIM & DMARC Policy (Optional)
+
+;; === CNAME Record ===
+mail 300 IN CNAME business.zoho.com.
+
+;; === MX Records ===
+@ 300 IN  MX  10 mx.zoho.com.
+@ 300 IN  MX  20 mx2.zoho.com.
+@ 300 IN  MX  50 mx3.zoho.com.
+
+;; === TXT Records ===
+;; Domain Verification
+;; - YOU MUST CHANGE THE "********" WITH YOUR ZOHO GENERATED CODE
+zb******** 300 IN TXT zmverify.zoho.com
+
+;; SPF
+@ 300 IN TXT "v=spf1 include:zoho.com ~all"
+
+;; DKIM
+;; - YOU MUST CHANGE THIS
+zoho._domainkey 300 IN TXT "CHANGE THIS WITH YOUR DKIM"
+
+;; DMARC Policy
+;;
+;; Parameter "p":
+;; - Phase 1: Monitor Reports and Traffic: p=none;
+;;
+;; - Phase 2: Quarantine Emails and Analyze: p=quarantine;
+;;  -- Parameter "pct": pct=20; - Only 20% of the emails that appear spoofed will be quarantined.
+;;
+;; - Phase 3: Reject Spoofed emails: p=reject;
+
+;; Remove ";;" below to enable
+;; _dmarc 300 IN TXT "v=DMARC1; p=none; rua=mailto:admin@yourdomain.com"

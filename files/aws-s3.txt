@@ -1,0 +1,12 @@
+;; AWS S3
+;; https://aws.amazon.com/s3/
+;;
+;; Docs:
+;; http://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html#VirtualHostingCustomURLs
+;;
+;; Adds the following records:
+;; - CNAME Record
+
+;; === CNAME Record ===
+;; - YOU MUST CHANGE HOSTNAME & VALUE WITH APPROPRIATE VALUES.
+files 300 IN CNAME files.YOURDOMAIN.COM.s3.amazonaws.com.

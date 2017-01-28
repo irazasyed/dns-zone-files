@@ -1,5 +1,8 @@
-;; Mailgun Records.
+;; Mailgun
 ;; http://www.mailgun.com/
+;;
+;; Docs:
+;; https://documentation.mailgun.com/quickstart-sending.html#verify-your-domain
 ;;
 ;; Adds the following records:
 ;; - MX Records: For inbound emails
@@ -22,4 +25,4 @@ email 300 IN CNAME mailgun.org.
 
 ;; DKIM
 ;; - YOU MUST CHANGE THIS
-mailo._domainkey 300 IN TXT "CHANGE THIS WITH YOUR DKIM"
+mg._domainkey 300 IN TXT "CHANGE THIS WITH YOUR DKIM"

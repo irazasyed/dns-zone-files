@@ -1,0 +1,15 @@
+;; Shopify
+;; https://shopify.com/
+;;
+;; Docs:
+;; https://help.shopify.com/manual/domains/connecting-existing-domains/setting-up-your-domain#root-domain
+;;
+;; Adds the following records:
+;; - A Record
+;; - CNAME Record
+
+;; === A Record ===
+@ 300 IN A 23.227.38.32
+
+;; === CNAME Record ===
+www 300 IN CNAME your-store-name.myshopify.com.

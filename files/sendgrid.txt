@@ -1,0 +1,31 @@
+;; SendGrid
+;; https://sendgrid.com/
+;;
+;; Adds the following records:
+;; - TXT Records: DKIM & SPF
+;; - MX Record
+;; - CNAME Records: For email link tracking & other.
+
+;; === CNAME Records ===
+email 300 IN CNAME sendgrid.net.
+
+;; ====== Records for Automated Security ON ======
+;;
+;; ==== CNAME Records ===
+subdomain 300 IN CNAME uXXXXXXX.wlXXX.sendgrid.net.
+s1.domainkey 300 IN CNAME s1.domainkey.uXXX.wlXXX.sendgrid.net.
+s2.domainkey 300 IN CNAME s1.domainkey.uXXX.wlXXX.sendgrid.net.
+
+;; ====== Records for Automated Security OFF ======
+;; Remove ";;" to enable the below records.
+;; Make sure to disable the above records before enabling these.
+;;
+;; ==== MX Record ===
+;; m1._domainkey 300 IN MX 10 mx.sendgrid.net.
+
+;; === TXT Records ===
+;; DKIM
+;; s1.domainkey 300 IN TXT "CHANGE THIS WITH YOUR DKIM"
+
+;; SPF
+;; s2.domainkey 300 IN TXT "v=spf1 include:sendgrid.net ~all"

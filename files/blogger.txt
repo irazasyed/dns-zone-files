@@ -1,0 +1,18 @@
+;; Blogger
+;; https://www.blogger.com/
+;;
+;; Docs:
+;; https://support.google.com/blogger/answer/55374?hl=en
+;;
+;; Adds the following records:
+;; - A Records
+;; - CNAME Record
+
+;; === A Records ===
+@ 300 IN A 216.239.32.21
+@ 300 IN A 216.239.34.21
+@ 300 IN A 216.239.36.21
+@ 300 IN A 216.239.38.21
+
+;; === CNAME Record ===
+www 300 IN CNAME www.YOURDOMAIN.COM.ghs.googlehosted.com.

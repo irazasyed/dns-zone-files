@@ -1,4 +1,4 @@
-;; SparkPost Records.
+;; SparkPost
 ;; https://www.sparkpost.com/
 ;;
 ;; Adds the following records:

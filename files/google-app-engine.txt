@@ -1,0 +1,12 @@
+;; Google App Engine
+;; https://cloud.google.com/appengine/
+;;
+;; Docs:
+;; https://cloud.google.com/appengine/docs/python/console/using-custom-domains-and-ssl
+;;
+;; Adds the following records:
+;; - CNAME Records
+
+;; === CNAME Records ===
+@ 300 IN CNAME ghs.googlehosted.com.
+www 300 IN CNAME ghs.googlehosted.com.

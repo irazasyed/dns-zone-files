@@ -1,0 +1,10 @@
+;; WordPress.com
+;; https://wordpress.com/
+;;
+;; Adds the following records:
+;; - CNAME Records
+
+;; === CNAME Records ===
+;; - YOU MUST CHANGE "YOUR-SITE-NAME" WITH YOUR WORDPRESS SITE NAME.
+@ 300 IN CNAME YOUR-SITE-NAME.wordpress.com.
+www 300 IN CNAME YOUR-SITE-NAME.wordpress.com.
