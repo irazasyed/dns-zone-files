@@ -1,8 +1,25 @@
 ;; Mailgun Records.
+;; http://www.mailgun.com/
+;;
+;; Adds the following records:
+;; - MX Records: For inbound emails
+;; - CNAME Records: For link tracking
+;; - TXT Records: SPF & DKIM
+;;
+;; Make sure to replace TXT record "_domainkey" hostname and value with your DKIM.
 
-;; MX Records
+;; ==== MX Records ===
 @ 300 IN MX 10 mxa.mailgun.org.
 @ 300 IN MX 10 mxb.mailgun.org.
 
-;; TXT Records
+;; === CNAME Records ===
+;; - YOU MIGHT WANNA CHANGE THIS WITH YOUR TRACKING HOSTNAME
+email 300 IN CNAME mailgun.org.
+
+;; === TXT Records ===
+;; SPF
 @ 300 IN TXT "v=spf1 include:mailgun.org ~all"
+
+;; DKIM
+;; - YOU MUST CHANGE THIS
+mailo._domainkey 300 IN TXT "CHANGE THIS WITH YOUR DKIM"

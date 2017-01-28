@@ -2,17 +2,19 @@
 ;; https://www.sparkpost.com/
 ;;
 ;; Adds the following records:
-;; - SPF (TXT)
-;; - DKIM (TXT)
-;; - CNAME Record
+;; - TXT Records: SPF & DKIM
+;; - CNAME Records: For email bounces & link tracking.
 ;;
 ;; Make sure to replace TXT record "_domainkey" hostname and value with your DKIM.
 
-;; TXT Records
+;; === TXT Records ===
+;; SPF
 @ 300 IN TXT "v=spf1 include:sparkpostmail.com ~all"
 
-;; DKIM (YOU MUST CHANGE THIS)
-scph000._domainkey 300 IN TXT "v=DKIM1; k=rsa; h=sha256; p=YOUR DKIM. CHANGE HOSTNAME AS WELL"
+;; DKIM
+;; - YOU MUST CHANGE THIS
+scph000._domainkey 300 IN TXT "CHANGE THIS WITH YOUR DKIM"
 
-;; CNAME Records
+;; === CNAME Records ===
 bounces 300 IN CNAME sparkpostmail.com.
+email 300 IN CNAME spgo.io.
