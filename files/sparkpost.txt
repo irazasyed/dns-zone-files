@@ -8,9 +8,10 @@
 ;;
 ;; Make sure to replace TXT record "_domainkey" hostname and value with your DKIM.
 
-
 ;; TXT Records
 @ 300 IN TXT "v=spf1 include:sparkpostmail.com ~all"
+
+;; DKIM (YOU MUST CHANGE THIS)
 scph000._domainkey 300 IN TXT "v=DKIM1; k=rsa; h=sha256; p=YOUR DKIM. CHANGE HOSTNAME AS WELL"
 
 ;; CNAME Records
