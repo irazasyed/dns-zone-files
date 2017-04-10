@@ -1,0 +1,12 @@
+;; Backblaze B2 Cloud Storage
+;; https://www.backblaze.com/b2/cloud-storage.html
+;;
+;; Docs:
+;; https://help.backblaze.com/hc/en-us/articles/217666928-Creating-a-Vanity-URL-with-B2
+;;
+;; Adds the following records:
+;; - CNAME Record
+
+;; === CNAME Record ===
+;; - YOU MUST UPDATE "f000" with the correct value from your Backblaze B2 panel.
+cdn 300 IN CNAME f000.backblazeb2.com.
