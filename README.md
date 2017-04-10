@@ -12,6 +12,7 @@
 - [Google-App-Engine](files/google-app-engine.txt): To config [Google App Engine](https://cloud.google.com/appengine/) service.
 - [GSuite](files/gsuite.txt): To config [G Suite](https://gsuite.google.com/) service.
 - [Mailgun](files/mailgun.txt): To config [Mailgun](http://www.mailgun.com/) service.
+- [Medium](files/medium.txt): To config [Medium.com](https://medium.com/) publication.
 - [SendGrid](files/sendgrid.txt): To config [SendGrid](https://sendgrid.com/) service.
 - [Shopify](files/shopify.txt): To config [Shopify](https://shopify.com/) service.
 - [SmugMug](files/smugmug.txt): To config [SmugMug](https://smugmug.com/) service.

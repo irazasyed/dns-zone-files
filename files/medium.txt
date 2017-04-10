@@ -1,0 +1,27 @@
+;; Medium
+;; https://medium.com
+;;
+;; Docs:
+;; https://help.medium.com/hc/en-us/articles/115003415108-Set-up-your-custom-domain-
+;;
+;; Adds the following records:
+;; - A Records
+;; - CNAME Record
+
+;; === A Records ===
+blog 300 IN A 52.0.16.118
+blog 300 IN A 52.1.119.170
+blog 300 IN A 52.1.147.205
+blog 300 IN A 52.1.173.203
+blog 300 IN A 52.4.145.119
+blog 300 IN A 52.4.175.111
+blog 300 IN A 52.4.225.124
+blog 300 IN A 52.4.240.221
+blog 300 IN A 52.4.38.70
+blog 300 IN A 52.5.181.79
+blog 300 IN A 52.6.3.192
+blog 300 IN A 52.6.46.142
+
+;; === CNAME Record ===
+;; - YOU MUST UPDATE "HOST_TOKEN" and "TARGET_TOKEN" with their appropriate values from Medium.com.
+HOST_TOKEN_XXXX.blog 300 IN CNAME TARGET_TOKEN_XXXX.comodoca.com.
