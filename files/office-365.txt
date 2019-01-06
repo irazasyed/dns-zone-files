@@ -1,0 +1,35 @@
+;; Office 365
+;; https://www.office365.com/
+;;
+;; Docs:
+;; https://docs.microsoft.com/en-us/office365/admin/dns/create-dns-records-at-cloudflare?view=o365-worldwide
+;;
+;; Adds the following records:
+;; - MX Records: For inbound emails
+;; - TXT Records: Domain Verification, SPF
+;; - CNAME Records: Required CNAME Records
+;; - SRV Records: Required SRV Records
+
+;; === MX Records ===
+;; - YOU MUST UPDATE THIS
+@ 600 IN  MX  1   YOUR-DOMAIN-KEY.mail.protection.outlook.com.
+
+;; === TXT Records ===
+;; Domain Verification
+;; - YOU MUST UPDATE THIS
+@ 300 IN TXT "MS=msYOUR VERIFICATION STRING"
+
+;; ==== CNAME Records ===
+autodiscover 1800 IN CNAME autodiscover.outlook.com.
+sip          1800 IN CNAME sipdir.online.lync.com.
+lyncdiscover 1800 IN CNAME webdir.online.lync.com.
+msoid        1800 IN CNAME clientconfig.microsoftonline-p.net.
+enterpriseregistration 1800 IN CNAME enterpriseregistration.windows.net.
+enterpriseenrollment   1800 IN CNAME enterpriseenrollment.manage.microsoft.com.
+
+;; ==== SRV Records ===
+_sip._tls	1800	IN	SRV		100	1	443	sipdir.online.lync.com.
+_sipfederationtls._tcp	1800	IN	SRV	100	1	5061	sipfed.online.lync.com.
+
+;; SPF
+@ 1800 IN TXT "v=spf1 include:spf.protection.outlook.com -all"
