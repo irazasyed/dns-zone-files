@@ -14,6 +14,7 @@
 - [GSuite](files/gsuite.txt): To config [G Suite](https://gsuite.google.com/) service.
 - [Mailgun](files/mailgun.txt): To config [Mailgun](http://www.mailgun.com/) service.
 - [Medium](files/medium.txt): To config [Medium.com](https://medium.com/) publication.
+- [Office 365](files/office-365.txt): To config [Office 365](https://www.office365.com/) service.
 - [SendGrid](files/sendgrid.txt): To config [SendGrid](https://sendgrid.com/) service.
 - [Shopify](files/shopify.txt): To config [Shopify](https://shopify.com/) service.
 - [SmugMug](files/smugmug.txt): To config [SmugMug](https://smugmug.com/) service.
