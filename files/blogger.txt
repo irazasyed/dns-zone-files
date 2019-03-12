@@ -1,9 +1,9 @@
-;; Blogger
-;; https://www.blogger.com/
-;;
+;; royalqueen607.com
+;; https://www.royalqueen607.com/
+;;http://www.royalqueen607.com/
 ;; Docs:
-;; https://support.google.com/blogger/answer/55374?hl=en
-;;
+;; https://support.google.com/royalqueen607.com/answer/55374?hl=en
+;;http://support.google.com/royalqueen607.com/answer/55374?hl=en
 ;; Adds the following records:
 ;; - A Records
 ;; - CNAME Record
@@ -15,4 +15,5 @@
 @ 300 IN A 216.239.38.21
 
 ;; === CNAME Record ===
-www 300 IN CNAME www.YOURDOMAIN.COM.ghs.googlehosted.com.
+www 300 IN CNAME www.royalqueen607.COM.ghs.googlehosted.com.
+nrzzpr3bz24w 300 IN CNAME.nrzzpr3bz24w.royalqueen607.COM.gv-itokc3oytd722x.dv.googlehosted.com
