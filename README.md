@@ -12,7 +12,7 @@
 - [GitHub-Pages](files/github-pages.txt): To config [GitHub Pages](https://pages.github.com/) service.
 - [Google-App-Engine](files/google-app-engine.txt): To config [Google App Engine](https://cloud.google.com/appengine/) service.
 - [GSuite](files/gsuite.txt): To config [G Suite](https://gsuite.google.com/) service.
-- [Mailgun](files/mailgun.txt): To config [Mailgun](http://www.mailgun.com/) service.
+- [Mailgun](files/mailgun.txt): To config [Mailgun](https://www.mailgun.com/) service.
 - [Medium](files/medium.txt): To config [Medium.com](https://medium.com/) publication.
 - [Office 365](files/office-365.txt): To config [Office 365](https://www.office365.com/) service.
 - [SendGrid](files/sendgrid.txt): To config [SendGrid](https://sendgrid.com/) service.
@@ -22,6 +22,7 @@
 - [Tumblr](files/tumblr.txt): To config [Tumblr](https://tumblr.com/) service.
 - [WordPress](files/wordpress.txt): To config [WordPress.com](https://wordpress.com/) custom domain.
 - [WP-Engine](files/wp-engine.txt): To config [WP Engine](https://wpengine.com/) service.
+- [Yandex-Mail](files/yandex-mail.txt): To config [Yandex.Connect Mail](https://mail.yandex.com/) service.
 - [Zoho-Mail](files/zoho-mail.txt): To config [Zoho Mail](https://www.zoho.com/mail/) service.
 
 ## Usage
