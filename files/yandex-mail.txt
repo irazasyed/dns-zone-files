@@ -1,0 +1,23 @@
+;; Yandex Mail
+;; https://mail.yandex.com/
+;;
+;; Docs:
+;; https://yandex.com/support/connect/dns-editor.html
+;;
+;; Adds the following records:
+;; - CNAME Record: Custom Login URL for Yandex Mail (mail.yourdomain.com)
+;; - MX Records: For inbound emails
+;; - TXT Records: SPF & DKIM
+
+;; === CNAME Record ===
+mail 300 IN CNAME domain.mail.yandex.net.
+
+;; === MX Records ===
+@ 300 IN  MX  10 mx.yandex.net.
+
+;; SPF
+@ 300 IN TXT "v=spf1 redirect=_spf.yandex.net"
+
+;; DKIM
+;; - YOU MUST CHANGE THIS
+mail._domainkey 300 IN TXT "CHANGE THIS WITH YOUR DKIM - Copy the value from Yandex.Mail settings"
