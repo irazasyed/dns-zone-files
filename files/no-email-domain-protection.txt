@@ -1,0 +1,27 @@
+;; No Email Server Domain Protection
+;;
+;; These records prevent email spoofs on domains that don't send or receive emails.
+;;
+;; Based on:
+;; https://www.gov.uk/guidance/protect-domains-that-dont-send-email
+;;
+;; Adds the following records:
+;; - MX Record: Null MX record for no inbound emails.
+;; - TXT Records:
+;;  - an SPF record that says you do not have any sending servers.
+;;  - a DMARC record to reject any email from your domain.
+;;  - an empty DKIM key record.
+
+;; === MX Record ===
+@ 1 IN  MX  0   .
+
+;; === TXT Records ===
+;; SPF
+@ 1 IN  TXT "v=spf1 -all"
+
+;; DMARC
+;; - YOU MUST UPDATE THIS WITH YOUR EMAIL ADDRESS.
+_dmarc 1	IN	TXT	"v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s;fo=1;rua=mailto:dmarc@YOURDOMAIN.com"
+
+;; DKIM
+*._domainkey 1	IN	TXT	"v=DKIM1; p="
