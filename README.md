@@ -25,6 +25,10 @@
 - [Yandex-Mail](files/yandex-mail.txt): To config [Yandex.Connect Mail](https://mail.yandex.com/) service.
 - [Zoho-Mail](files/zoho-mail.txt): To config [Zoho Mail](https://www.zoho.com/mail/) service.
 
+### Other
+
+- [No Email Domain Protection](files/no-email-domain-protection.txt): To prevent email spoofs on domains that don't send or recieve emails.
+
 ## Usage
 
 - Download one of the zone files.
