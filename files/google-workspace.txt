@@ -1,5 +1,5 @@
-;; G Suite
-;; https://gsuite.google.com/
+;; Google Workspace
+;; https://workspace.google.com/
 ;;
 ;; Docs:
 ;; https://support.google.com/a/answer/174125
