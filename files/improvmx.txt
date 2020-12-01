@@ -1,0 +1,17 @@
+;; ImprovMX
+;; https://improvmx.com/
+;;
+;; Docs:
+;; https://improvmx.com/guides/cloudflare/
+;;
+;; Adds the following records:
+;; - MX Records: For inbound emails
+;; - TXT Records: SPF
+
+;; === MX Records ===
+@ 300 IN  MX  10   mx1.improvmx.com.
+@ 300 IN  MX  20   mx2.improvmx.com.
+
+;; === TXT Records ===
+;; SPF
+@ 300 IN TXT "v=spf1 include:spf.improvmx.com ~all"
