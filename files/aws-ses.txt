@@ -1,0 +1,42 @@
+;; AWS SES - Amazon Simple Email Service
+;; https://aws.amazon.com/ses/
+;;
+;; Docs:
+;; - MX: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/receiving-email-mx-record.html
+;; - MAIL FROM: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/mail-from.html
+;; - Domain Verification: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/dns-txt-records.html
+;; - DMARC: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-authentication-dmarc.html
+;; - SPF: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-authentication-spf.html
+;; - DKIM: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-authentication-dkim-easy-setup-domain.html
+;;
+;; Adds the following records:
+;; - MX Records: For inbound emails.
+;; - TXT Records: Domain Verification, DMARC, & SPF.
+;; - CNAME Records: DKIM.
+
+;; === MX Records ===
+;; - YOU MUST CHANGE THE REGION.
+@ 300 IN  MX  10  inbound-smtp.REPLACE_REGION.amazonaws.com.
+
+;; For "MAIL FROM" feature (change as per settings).
+amazonses 300 IN  MX  10  feedback-smtp.REPLACE_REGION.amazonses.com.
+
+
+;; === TXT Records ===
+;; Domain Verification
+;; - YOU MUST CHANGE THE VERIFICATION STRING.
+_amazonses 300 IN TXT "amazonses:VERIFICATION STRING"
+
+;; DMARC
+;; - YOU MUST CHANGE THE EMAIL.
+_dmarc 300 IN TXT "v=DMARC1;p=quarantine;pct=25;rua=mailto:dmarc@DOMAIN.com"
+
+;; SPF
+@ 300 IN TXT "v=spf1 include:amazonses.com ~all"
+
+;; === CNAME Records ===
+;; DKIM
+;; - YOU MUST CHANGE THE TOKENS.
+TOKEN_1._domainkey 300 IN CNAME TOKEN_1.dkim.amazonses.com.
+TOKEN_2._domainkey 300 IN CNAME TOKEN_2.dkim.amazonses.com.
+TOKEN_3._domainkey 300 IN CNAME TOKEN_3.dkim.amazonses.com.
