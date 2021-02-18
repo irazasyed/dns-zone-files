@@ -7,7 +7,7 @@
 - [AWS-ELB](files/aws-elb.txt): To config [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/) service.
 - [AWS-S3](files/aws-s3.txt): To config [AWS S3](https://aws.amazon.com/s3/) service.
 - [AWS-SES](files/aws-ses.txt): To config [AWS SES](https://aws.amazon.com/ses/) service.
-- [Backblaze-B2](files/backblaze.txt): To config [Backblaze B2](https://www.backblaze.com/b2/cloud-storage.html) Cloud Storage.
+- [Backblaze-B2](files/backblaze-b2.txt): To config [Backblaze B2](https://www.backblaze.com/b2/cloud-storage.html) Cloud Storage.
 - [Blogger](files/blogger.txt): To config [Blogger](https://blogger.com/) service.
 - [ClickFunnels](files/clickfunnels.txt): To config [ClickFunnels](https://clickfunnels.com/) service.
 - [GitHub-Pages](files/github-pages.txt): To config [GitHub Pages](https://pages.github.com/) service.
