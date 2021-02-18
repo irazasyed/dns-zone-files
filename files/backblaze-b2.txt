@@ -10,3 +10,18 @@
 ;; === CNAME Record ===
 ;; - YOU MUST UPDATE "f000" with the correct value from your Backblaze B2 panel.
 cdn 300 IN CNAME f000.backblazeb2.com.
+104.153.233.176	api.backblazeb2.com
+104.153.233.180	api.backblazeb2.com
+206.190.215.15	api.backblazeb2.com
+104.153.233.176	api000.backblazeb2.com
+104.153.233.180	api001.backblazeb2.com
+206.190.215.15	api002.backblazeb2.com
+45.11.36.15	api003.backblazeb2.com
+104.153.233.177	f000.backblazeb2.com
+104.153.233.181	f001.backblazeb2.com
+206.190.215.16	f002.backblazeb2.com
+45.11.36.16	f003.backblazeb2.com
+45.11.37.254	s3.eu-central-003.backblazeb2.com
+206.190.208.254	s3.us-west-000.backblazeb2.com
+104.153.233.254	s3.us-west-001.backblazeb2.com
+206.190.215.254	s3.us-west-002.backblazeb2.com
