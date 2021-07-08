@@ -25,4 +25,4 @@
 
 ;; DKIM
 ;; - YOU MUST CHANGE THIS
-google._domainkey 300 IN TXT "CHANGE THIS WITH YOUR DKIM"
+google._domainkey 300 IN TXT "CHANGE THIS WITH YOUR DKIM YOU CAN GET IT HERE https://admin.google.com/ac/apps/gmail/authenticateemail"
