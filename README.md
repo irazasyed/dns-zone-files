@@ -13,6 +13,7 @@
 - [GitHub-Pages](files/github-pages.txt): To config [GitHub Pages](https://pages.github.com/) service.
 - [Google-App-Engine](files/google-app-engine.txt): To config [Google App Engine](https://cloud.google.com/appengine/) service.
 - [Google Workspace](files/google-workspace.txt): To config [Google Workspace](https://workspace.google.com/) (aka GSuite) service.
+- [iCloud+](files/apple-icloud-mail.txt): To config [iCloud+](https://support.apple.com/en-us/HT212514) custom email domain.
 - [ImproveMX](files/improvmx.txt): To config [ImproveMX](https://improvmx.com/) service.
 - [Mailgun](files/mailgun.txt): To config [Mailgun](https://www.mailgun.com/) service.
 - [Medium](files/medium.txt): To config [Medium.com](https://medium.com/) publication.
