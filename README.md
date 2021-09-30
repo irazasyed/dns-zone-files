@@ -1,6 +1,6 @@
 # DNS Zone Files
 
-> Ready to import common config zone files for CloudFlare.
+> Ready to import common config zone files for Cloudflare.
 
 ## Available Zone Files
 
@@ -35,7 +35,9 @@
 
 - Download one of the zone files.
 
-- Import it inside CloudFlare: Domain > DNS > Advanced > Upload DNS File
+- Import it inside Cloudflare: Domain > DNS > Advanced > Import DNS records.
+
+![how-to-import-records](https://user-images.githubusercontent.com/1915268/135412732-0495c2a5-03ca-4fbf-b84d-49fc3a335125.gif)
 
 ## Contributing
 
