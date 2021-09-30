@@ -1,0 +1,23 @@
+;; Apple iCloud+ Mail
+;; https://support.apple.com/en-us/HT212514
+;;
+;; Docs:
+;; https://support.apple.com/en-us/HT212524
+;;
+;; Adds the following records:
+;; - MX Records: For inbound emails.
+;; - TXT Records: Domain Verification & SPF.
+;; - CNAME Records: DKIM.
+
+;; === MX Records ===
+@	1	IN	MX	10 mx02.mail.icloud.com.
+@	1	IN	MX	10 mx01.mail.icloud.com.
+
+;; === TXT Records ===
+;; - YOU MUST CHANGE THE SECRET CODE FROM SETUP.
+@	1	IN	TXT	"v=spf1 redirect=icloud.com"
+@	1	IN	TXT	"apple-domain=YOUR-SECRET-CODE"
+
+;; === CNAME Records ===
+;; - YOU MUST REPLACE "YOURDOMAIN.TLD" WITH YOUR DOMAIN.
+sig1._domainkey	1	IN	CNAME	sig1.dkim.YOURDOMAIN.TLD.at.icloudmailadmin.com.
