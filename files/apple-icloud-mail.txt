@@ -15,7 +15,7 @@
 
 ;; === TXT Records ===
 ;; - YOU MUST CHANGE THE SECRET CODE FROM SETUP.
-@	1	IN	TXT	"v=spf1 redirect=icloud.com"
+@	1	IN	TXT	"v=spf1 include:icloud.com ~all"
 @	1	IN	TXT	"apple-domain=YOUR-SECRET-CODE"
 
 ;; === CNAME Records ===
